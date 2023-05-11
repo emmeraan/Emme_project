@@ -11,6 +11,7 @@ import { ConfigModule } from '@nestjs/config';
     ConfigModule.forRoot({
       isGlobal:true
     }),
+    
     SequelizeModule.forRoot({
       dialect: 'mysql',
       host: process.env.DB_HOST,
